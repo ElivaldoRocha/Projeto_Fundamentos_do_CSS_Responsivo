@@ -1,0 +1,313 @@
+/* Resetando margens e preenchimentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo a fonte padrão */
+html {
+  font-size: 62.5%; /* Define a base de 10px para o cálculo de rem */
+}
+
+/* Estilizando o corpo do documento */
+body {
+  font-family: "Montserrat", sans-serif; /* Fonte principal */
+  font-size: 1.6rem; /* Tamanho da fonte base */
+  line-height: 1.4; /* Altura da linha */
+  color: #404040; /* Cor do texto */
+  background-color: #f5f5f5; /* Cor de fundo */
+}
+
+/* Estilizando o cabeçalho */
+header {
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre os itens */
+  background-color: #0056b3; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 1rem; /* Preenchimento interno */
+  text-align: center; /* Alinhamento do texto */
+}
+
+header h1 {
+  margin-left: 30%; /* Margem à esquerda */
+}
+
+header nav {
+  margin-top: 1.5rem; /* Margem superior */
+  margin-right: 30%; /* Margem à direita */
+}
+
+header nav a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Sem sublinhado */
+  margin: 0 1.5rem; /* Margem lateral */
+}
+
+header nav a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilizando o conteúdo principal */
+main {
+  padding: 2rem; /* Preenchimento interno */
+}
+
+/* Estilizando a seção sobre a loja */
+.sobre-a-loja {
+  display: flex; /* Layout flexível */
+  flex-wrap: wrap; /* Quebra de linha */
+  align-items: center; /* Alinhamento central */
+  justify-content: space-between; /* Espaço entre os itens */
+  background-color: white; /* Cor de fundo */
+  padding: 2rem; /* Preenchimento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.container {
+  display: flex; /* Layout flexível */
+  width: 100%; /* Largura total */
+  max-width: 1250px; /* Largura máxima */
+  margin: 0 auto; /* Margem automática */
+}
+
+/* Estilizando o container da imagem */
+.image-container {
+  flex: 1; /* Flexibilidade */
+  max-width: 45%; /* Largura máxima */
+}
+
+.sobre-a-loja img {
+  width: 100%; /* Largura total */
+  height: auto; /* Altura automática */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilizando o container do texto */
+.text-container {
+  flex: 2; /* Flexibilidade */
+  padding-left: 2rem; /* Preenchimento à esquerda */
+  max-width: 55%; /* Largura máxima */
+}
+
+.text-container h2 {
+  color: #0056b3; /* Cor do texto */
+  margin-bottom: 1rem; /* Margem inferior */
+  border-bottom: 4px solid #0056b3; /* Linha inferior */
+  padding-bottom: 0.5rem; /* Preenchimento inferior */
+}
+
+.text-container p {
+  text-align: justify; /* Alinhamento justificado */
+  margin-bottom: 1rem; /* Margem inferior */
+}
+
+/* Estilizando a seção de produtos */
+.produtos {
+  display: block; /* Exibição em bloco */
+  background-color: white; /* Cor de fundo */
+  padding: 2rem; /* Preenchimento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-top: 2rem; /* Margem superior */
+}
+
+/* Ajustando o container dos produtos */
+.produtos .container {
+  display: flex; /* Layout flexível */
+  flex-wrap: wrap; /* Quebra de linha */
+  justify-content: space-between; /* Espaço entre os itens */
+  gap: 1rem; /* Espaço entre os itens */
+}
+
+.produtos h2 {
+  color: #0056b3; /* Cor do texto */
+  margin-bottom: 1rem; /* Margem inferior */
+  border-bottom: 4px solid #0056b3; /* Linha inferior */
+  padding-bottom: 0.5rem; /* Preenchimento inferior */
+  width: 100%; /* Largura total */
+}
+
+/* Estilizando os itens de produto */
+.produto-item {
+  flex: 1; /* Flexibilidade */
+  max-width: 30%; /* Largura máxima */
+  margin-bottom: 2rem; /* Margem inferior */
+  text-align: center; /* Alinhamento central */
+}
+
+.produto-item img {
+  width: 100%; /* Largura total */
+  height: auto; /* Altura automática */
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+.produto-item p {
+  margin-top: 1rem; /* Margem superior */
+  font-size: 1.4rem; /* Tamanho da fonte */
+  color: #404040; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilizando o botão de adicionar ao carrinho */
+.produto-btn {
+  display: inline-block; /* Exibição em linha como bloco */
+  margin-top: 1rem; /* Margem superior */
+  padding: 0.5rem 1rem; /* Preenchimento interno */
+  font-size: 1.4rem; /* Tamanho da fonte */
+  color: white; /* Cor do texto */
+  background-color: #0056b3; /* Cor de fundo */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+}
+
+.produto-btn:hover {
+  background-color: #003d80; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilizando o rodapé */
+footer {
+  background-color: #0056b3; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-align: center; /* Alinhamento central */
+  padding: 1rem; /* Preenchimento interno */
+  margin-top: 2rem; /* Margem superior */
+}
+
+/* Media queries para tornar o layout responsivo */
+
+/* Layout Mobile (até 640px) */
+@media (max-width: 640px) {
+  header {
+    flex-direction: column; /* Layout em coluna */
+    align-items: center; /* Alinhamento central */
+  }
+
+  header h1 {
+    margin-left: 0; /* Remove a margem esquerda */
+  }
+
+  header nav {
+    margin: 1rem 0; /* Margens verticais */
+    margin-right: 0; /* Remove a margem direita */
+  }
+
+  .sobre-a-loja .container {
+    flex-direction: column; /* Layout em coluna */
+  }
+
+  .image-container,
+  .text-container {
+    max-width: 100%; /* Largura máxima */
+    padding: 0; /* Remove preenchimento */
+  }
+
+  .text-container {
+    padding-top: 1rem; /* Preenchimento superior */
+  }
+
+  .produtos .container {
+    flex-direction: column; /* Layout em coluna */
+  }
+
+  .produto-item {
+    max-width: 100%; /* Largura máxima */
+  }
+}
+
+/* Layout Tablet (de 641px até 1023px) */
+@media (min-width: 641px) and (max-width: 1023px) {
+  header {
+    flex-direction: row; /* Layout em linha */
+    justify-content: space-between; /* Espaço entre os itens */
+  }
+
+  header h1 {
+    margin-left: 10%; /* Margem à esquerda */
+  }
+
+  header nav {
+    margin-top: 0; /* Remove a margem superior */
+    margin-right: 10%; /* Margem à direita */
+  }
+
+  .sobre-a-loja {
+    display: flex; /* Layout flexível */
+    flex-direction: row; /* Layout em linha */
+    align-items: flex-start; /* Alinhamento no início */
+    gap: 2rem; /* Espaço entre os itens */
+  }
+
+  .sobre-a-loja .container {
+    flex-direction: row; /* Layout em linha */
+    width: 100%; /* Largura total */
+    justify-content: space-between; /* Espaço entre os itens */
+  }
+
+  .image-container,
+  .text-container {
+    max-width: 45%; /* Largura máxima */
+  }
+
+  .text-container {
+    padding-left: 1rem; /* Preenchimento à esquerda */
+  }
+
+  .produtos {
+    flex: 1; /* Flexibilidade */
+    max-width: 55%; /* Largura máxima */
+    margin-top: 0; /* Remove a margem superior */
+  }
+
+  .produtos .container {
+    display: grid; /* Layout em grade */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    grid-gap: 1rem; /* Espaço entre os itens */
+  }
+
+  .produto-item {
+    max-width: 100%; /* Largura máxima */
+  }
+}
+
+/* Layout Desktop (a partir de 1024px) */
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row; /* Layout em linha */
+    justify-content: space-between; /* Espaço entre os itens */
+  }
+
+  header h1 {
+    margin-left: 30%; /* Margem à esquerda */
+  }
+
+  header nav {
+    margin-top: 1.5rem; /* Margem superior */
+    margin-right: 30%; /* Margem à direita */
+  }
+
+  .sobre-a-loja {
+    flex-direction: row; /* Layout em linha */
+  }
+
+  .image-container,
+  .text-container {
+    max-width: 50%; /* Largura máxima */
+  }
+
+  .text-container {
+    padding-left: 2rem; /* Preenchimento à esquerda */
+  }
+
+  .produtos .container {
+    flex-direction: row; /* Layout em linha */
+    justify-content: space-between; /* Espaço entre os itens */
+  }
+
+  .produto-item {
+    max-width: 23%; /* Largura máxima */
+  }
+}
